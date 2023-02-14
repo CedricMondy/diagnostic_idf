@@ -9,9 +9,9 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: CedricMondy/diagnostic_idf
-description: "Ce diagnostic territorial répertorie les principaux enjeux en termes de biodiversité identifiés au niveau de la région Île-de-France par la Direction régionale de l'Office français de la biodiversité. Ces enjeux sont chacun traité dans une fiche enjeu dédiée faisant un état des lieux, dressant les pressions potentielles impliquées ainsi que les leviers d'action disponibles pour l'OFB."
 ---
 
+Ce diagnostic territorial répertorie les principaux enjeux en termes de biodiversité identifiés au niveau de la région Île-de-France par la Direction régionale de l'Office français de la biodiversité. Ces enjeux sont chacun traité dans une fiche enjeu dédiée faisant un état des lieux, dressant les pressions potentielles impliquées ainsi que les leviers d'action disponibles pour l'OFB.
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
