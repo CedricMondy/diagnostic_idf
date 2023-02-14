@@ -1,7 +1,7 @@
 fig:nice-fig
 tab:nice-tab
 intro
-literature
+la-continuité-écologique-des-cours-deau
 methods
 math-example
 applications
