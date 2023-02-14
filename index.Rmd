@@ -11,7 +11,7 @@ link-citations: yes
 github-repo: CedricMondy/diagnostic_idf
 ---
 
-# Les diagnostices territoriaux à l'OFB
+# Les diagnostics territoriaux à l'OFB
 
 Ce diagnostic territorial répertorie les principaux enjeux en termes de biodiversité identifiés au niveau de la région Île-de-France par la Direction régionale de l'Office français de la biodiversité.
 
