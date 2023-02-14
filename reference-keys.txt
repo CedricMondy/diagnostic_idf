@@ -1,11 +1,2 @@
-fig:nice-fig
-tab:nice-tab
 objet
-intro
 la-continuité-écologique-des-cours-deau
-methods
-math-example
-applications
-example-one
-example-two
-final-words
