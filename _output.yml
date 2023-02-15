@@ -1,4 +1,4 @@
-bookdown::gitbook:
+gouvdown::gitbook_gouv:
   css: style.css
   config:
     toc:
@@ -6,7 +6,6 @@ bookdown::gitbook:
         <li><a href="./">Diagnostic territorial Île-de-France</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
