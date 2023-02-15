@@ -3,7 +3,7 @@ gouvdown::gitbook_gouv:
   config:
     toc:
       before: |
-        <li><img src="assets/bloc-marque-RF-OFB_horizontal.jpg" width="275"></li>
+        <li><a href="https://www.ofb.gouv.fr/" target="_blank"><img src="assets/bloc-marque-RF-OFB_horizontal.jpg" width="275"></a></li>
         <li><a href="./"><b>Diagnostic territorial Île-de-France</b></a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
