@@ -57,7 +57,7 @@ roe_l2 <- roe %>%
   )
 ```
 
-En Île-de-France, plus de `r get_lower_hundreds(nrow(roe))` obstacles à l'écoulement sont actuellement répertoriés (`r lubridate::as_date(date_export, format = "%Y%m%d")`) dans le [Référentiel national (ROE)](https://www.sandre.eaufrance.fr/atlas/srv/fre/catalog.search#/metadata/59057026-b40c-4cf9-9e3e-7296e0aa1a78) dont environ `r get_round_hundreds(nrow(roe_l2))` sur les `r get_round_dozens(lineaire_l2 / 1000)` kilomètres de cours d'eau classés en liste 2 dans la région. Ce nombre d'obstacles pour lesquels des solutions de restauration doivent être apportée est important au vu des opérations à mettre en place. Dans ce contexte, [une note technique du 30 avril 2019](https://www.legifrance.gouv.fr/circulaire/id/44619) de la Direction de l'eau et de la biodiversité du Ministère de l'environnement demande de prioriser les moyens administratifs, financiers et humains sur des ouvrages prioritaires définis grâce à l'expertise locale des DDT, DREAL, des directions territoriales des agences de l'eau et de l'OFB. Au niveau du bassin Seine-Normandie, ce sont ainsi 807 ouvrages, dont `r nrow(ouvrages_prioritaires)` en Île-de-France, qui devront être traités en priorité d'ici 2027.
+En Île-de-France, plus de `r get_lower_hundreds(nrow(roe))` obstacles à l'écoulement sont actuellement répertoriés (`r lubridate::as_date(date_export, format = "%Y%m%d")`) dans le [Référentiel national (ROE)](https://www.sandre.eaufrance.fr/atlas/srv/fre/catalog.search#/metadata/59057026-b40c-4cf9-9e3e-7296e0aa1a78) dont moins de `r get_higher_hundreds(nrow(roe_l2))` sur les `r get_round_dozens(lineaire_l2 / 1000)` kilomètres de cours d'eau classés en liste 2 dans la région. Ce nombre d'obstacles pour lesquels des solutions de restauration doivent être apportée est important au vu des opérations à mettre en place. Dans ce contexte, [une note technique du 30 avril 2019](https://www.legifrance.gouv.fr/circulaire/id/44619) de la Direction de l'eau et de la biodiversité du Ministère de l'environnement demande de prioriser les moyens administratifs, financiers et humains sur des ouvrages prioritaires définis grâce à l'expertise locale des DDT, DREAL, des directions territoriales des agences de l'eau et de l'OFB. Au niveau du bassin Seine-Normandie, ce sont ainsi 807 ouvrages, dont `r nrow(ouvrages_prioritaires)` en Île-de-France, qui devront être traités en priorité d'ici 2027.
 
 ![](medias/fig_1.png)
 
@@ -66,5 +66,23 @@ Cette connaissance des ouvrages peut ensuite être synthétisée sous la forme d
 > **Taux d'étagement**: Rapport entre la somme des hauteurs de chute des obstacles à l'écoulement et le dénivelé naturel des cours d'eau
 
 ![](medias/fig_2.png)
+
+Toutefois, le calcul de tels indicateurs peut être rendu moins précis, voir localement incorrect, en raison d'une mauvaise connaissance des ouvrages:
+
+-   connaissance lacunaire des caractéristiques des obstacles à l'écoulement, en particulier sur leur hauteur de chute,
+
+-   délais de mise à jour en cas de changement de statut, par exemple pour des ouvrages détruits dans le cadre d'opérations de restauration de la continuité.
+
+```{r}
+roe_sans_hauteur <- roe %>% 
+  dplyr::filter(
+    CdHautChutClObstEcoul == 0
+  )
+
+roe_l2_sans_hauteur <- roe_l2 %>% 
+  dplyr::filter(CdObstEcoul %in% roe_sans_hauteur$CdObstEcoul)
+```
+
+En Île-de-France, ce sont ainsi environ `r get_round_dozens(nrow(roe_l2_sans_hauteur) / nrow(roe_l2)*100)` % des ouvrages sur des cours d'eau classés en liste 2 pour lesquels la donnée de hauteur de chute est manquante.
 
 ## Actions de l'OFB
