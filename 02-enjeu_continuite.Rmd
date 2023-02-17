@@ -73,7 +73,7 @@ Toutefois, le calcul de tels indicateurs peut être rendu moins précis, voir lo
 
 -   délais de mise à jour en cas de changement de statut, par exemple pour des ouvrages détruits dans le cadre d'opérations de restauration de la continuité.
 
-```{r}
+```{r, include=FALSE}
 roe_sans_hauteur <- roe %>% 
   dplyr::filter(
     CdHautChutClObstEcoul == 0
