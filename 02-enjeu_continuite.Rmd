@@ -2,6 +2,7 @@
 if (!require(dplyr)) install.packages("dplyr")
 if (!require(import)) install.packages("import")
 if (!require(sf)) install.packages("sf")
+if (!require(lubridate)) install.packages("lubridate")
 
 source("scripts/utils.R")
 import::from(dplyr, '%>%')
