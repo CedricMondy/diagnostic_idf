@@ -12,7 +12,7 @@ import::from(dplyr, '%>%')
 
 Le bon fonctionnement des écosystèmes liés aux cours d'eau dépend du maintien de leur connectivité longitudinale et transversale. Cette connectivité permet une bonne circulation des flux liquides, solides et biologiques entre les différents composants du paysage hydrographique.
 
-Les obstacles à l'écoulement sont des ouvrages construits par l'homme pour répondre à des usages variés (production d'énergie, irrigation, soutien à la navigation, protection contre les innondations...). Les ouvrages transversaux affectent principalement la composante longitudinale de la continuité écologique en limitant les flux sédimentaires, empêchant la libre circulation des espèces, notamment piscicoles, et pouvant modifier les équilibres quantitatifs et l'état qualitatif de l'eau.
+Les obstacles à l'écoulement sont des ouvrages construits par l'homme pour répondre à des usages variés (production d'énergie, irrigation, soutien à la navigation, protection contre les inondations...). Les ouvrages transversaux affectent principalement la composante longitudinale de la continuité écologique en limitant les flux sédimentaires, empêchant la libre circulation des espèces, notamment piscicoles, et pouvant modifier les équilibres quantitatifs et l'état qualitatif de l'eau.
 
 ## Contexte réglementaire
 
@@ -20,7 +20,7 @@ La préservation et la restauration de la continuité écologique des cours d'ea
 
 -   La Directive européenne cadre sur l'eau (DCE) [@noauthor_directive_2000] prévoit que, en lien avec l'objectif d'atteinte du bon état écologique de leurs masses d'eau, les États membres doivent garantir la continuité des cours d'eau;
 
--   La loi sur l'eau et les milieux aquatiques [@noauthor_loi_2006] transpose en droit français la DCE et courve la mise en place de dispositifs permettant la libre circulation et des débits minimums adaptés aux besoins écologiques.
+-   La loi sur l'eau et les milieux aquatiques [@noauthor_loi_2006] transpose en droit français la DCE et couvre la mise en place de dispositifs permettant la libre circulation et des débits minimums adaptés aux besoins écologiques.
 
 Ainsi, en application de l'article [L.214-17 du code de l'environnement](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043975402/2022-04-18), les cours d'eau ont été classés sur deux listes.
 
