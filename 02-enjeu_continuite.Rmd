@@ -71,7 +71,7 @@ Toutefois, le calcul de tels indicateurs peut être rendu moins précis, voir lo
 
 -   connaissance lacunaire des caractéristiques des obstacles à l'écoulement, en particulier sur leur hauteur de chute,
 
--   délais de mise à jour en cas de changement de statut, par exemple pour des ouvrages détruits dans le cadre d'opérations de restauration de la continuité.
+-   délais de mise à jour de la donnée bancarisée en cas de changement de statut, par exemple pour des ouvrages détruits dans le cadre d'opérations de restauration de la continuité.
 
 ```{r, include=FALSE}
 roe_sans_hauteur <- roe %>% 
@@ -86,3 +86,19 @@ roe_l2_sans_hauteur <- roe_l2 %>%
 En Île-de-France, ce sont ainsi environ `r get_round_dozens(nrow(roe_l2_sans_hauteur) / nrow(roe_l2)*100)` % des ouvrages sur des cours d'eau classés en liste 2 pour lesquels la donnée de hauteur de chute est manquante.
 
 ## Actions de l'OFB
+
+### Connaissance
+
+-   Recueil de données sur les ouvrages (ROE/BDOE/ICE), en priorité sur les cours d'eau classés en Liste 2 et sur les masses d'eau à enjeux;
+
+-   Suivi des opérations de restauration de la continuité
+
+### Police
+
+### Mobilisation
+
+-   Contribution aux documents de planification: SDAGE, PLAGEPOMI
+
+## Partenaires impliqués
+
+DRIEAT, DDT, Syndicats de rivière, Fédérations de pêche
